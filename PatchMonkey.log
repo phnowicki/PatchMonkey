@@ -1,0 +1,630 @@
+2014/10/07 22:47:57 2014-10-07 22:47:57	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.150
+2014/10/07 22:48:10 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:48:10 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'rebootRequired' => 'false',
+                           'version' => '0.0.0.0-0',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
+                           'path' => '/common/download/',
+                           'validated' => 'true',
+                           'signed' => 'true',
+                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
+                           'upgradeLocation' => {},
+                           'unrestrictedVersion' => 'false',
+                           'user' => {},
+                           'upgradeType' => 'upgradefile.type.cop',
+                           'essuTimestamp' => {},
+                           'server' => {},
+                           'rejectCode' => {}
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 22:48:10 2014-10-07 22:48:10		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:48:18 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:48:18 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:48:18 2014-10-07 22:48:18		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:48:18 2014-10-07 22:48:18	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.151
+2014/10/07 22:48:32 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:48:32 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'result' => 'internal.request.complete.message',
+          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
+        };
+2014/10/07 22:48:32 2014-10-07 22:48:32		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:48:40 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:48:40 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:48:40 2014-10-07 22:48:40		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:48:40 2014-10-07 22:48:40	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.152
+2014/10/07 22:48:50 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:48:50 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 22:48:50 2014-10-07 22:48:50		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:48:57 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:48:57 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:48:57 2014-10-07 22:48:57		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:48:57 2014-10-07 22:48:57	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.160
+2014/10/07 22:49:08 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:49:08 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'rebootRequired' => 'false',
+                           'version' => '0.0.0.0-0',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
+                           'path' => '/common/download/',
+                           'validated' => 'true',
+                           'signed' => 'true',
+                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
+                           'upgradeLocation' => {},
+                           'unrestrictedVersion' => 'false',
+                           'user' => {},
+                           'upgradeType' => 'upgradefile.type.cop',
+                           'essuTimestamp' => {},
+                           'server' => {},
+                           'rejectCode' => {}
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 22:49:08 2014-10-07 22:49:08		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:49:17 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:49:17 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:49:17 2014-10-07 22:49:17		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:49:17 2014-10-07 22:49:17	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.161
+2014/10/07 22:49:32 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:49:32 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'result' => 'internal.request.complete.message',
+          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
+        };
+2014/10/07 22:49:32 2014-10-07 22:49:32		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:49:41 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:49:41 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:49:41 2014-10-07 22:49:41		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:49:41 2014-10-07 22:49:41	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.162
+2014/10/07 22:49:52 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:49:52 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 22:49:52 2014-10-07 22:49:52		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:49:59 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:49:59 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:49:59 2014-10-07 22:49:59		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:49:59 2014-10-07 22:49:59	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.170
+2014/10/07 22:50:08 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:50:08 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'rebootRequired' => 'false',
+                           'version' => '0.0.0.0-0',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
+                           'path' => '/common/download/',
+                           'validated' => 'true',
+                           'signed' => 'true',
+                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
+                           'upgradeLocation' => {},
+                           'unrestrictedVersion' => 'false',
+                           'user' => {},
+                           'upgradeType' => 'upgradefile.type.cop',
+                           'essuTimestamp' => {},
+                           'server' => {},
+                           'rejectCode' => {}
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 22:50:08 2014-10-07 22:50:08		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:50:18 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:50:18 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:50:18 2014-10-07 22:50:18		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:50:18 2014-10-07 22:50:18	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.171
+2014/10/07 22:50:28 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:50:28 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'result' => 'internal.request.complete.message',
+          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
+        };
+2014/10/07 22:50:28 2014-10-07 22:50:28		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:50:36 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:50:36 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:50:36 2014-10-07 22:50:36		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:50:36 2014-10-07 22:50:36	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.172
+2014/10/07 22:50:56 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 22:50:56 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 22:50:56 2014-10-07 22:50:56		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 22:51:02 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 22:51:02 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 22:51:02 2014-10-07 22:51:02		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 22:51:02 
+2014-10-07 22:51:02	Final Results:
+			Total Servers:9
+			Stage Successful:9
+			Apply Successful:0
+2014/10/07 23:06:37 2014-10-07 23:06:37	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.150
+2014/10/07 23:06:48 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 23:06:48 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'rebootRequired' => 'false',
+                           'version' => '0.0.0.0-0',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
+                           'path' => '/common/download/',
+                           'validated' => 'true',
+                           'signed' => 'true',
+                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
+                           'upgradeLocation' => {},
+                           'unrestrictedVersion' => 'false',
+                           'user' => {},
+                           'upgradeType' => 'upgradefile.type.cop',
+                           'essuTimestamp' => {},
+                           'server' => {},
+                           'rejectCode' => {}
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 23:06:48 2014-10-07 23:06:48		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 23:06:57 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 23:06:57 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 23:06:57 2014-10-07 23:06:57		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 23:06:57 2014-10-07 23:06:57	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.151
+2014/10/07 23:07:09 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 23:07:09 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'result' => 'internal.request.complete.message',
+          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
+        };
+2014/10/07 23:07:09 2014-10-07 23:07:09		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 23:07:17 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 23:07:17 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 23:07:17 2014-10-07 23:07:17		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 23:07:17 2014-10-07 23:07:17	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.152
+2014/10/07 23:07:26 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
+2014/10/07 23:07:26 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
+          'upgradeFile' => {
+                           'password' => 'sftpuser',
+                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
+                           'user' => 'sftpuser',
+                           'name' => 'ciscocm.bashupgrade.cop.sgn',
+                           'upgradeType' => 'patch',
+                           'server' => '192.168.1.20',
+                           'path' => '\\'
+                         },
+          'remoteMessages' => {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              },
+          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.complete.message'
+        };
+2014/10/07 23:07:26 2014-10-07 23:07:26		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
+2014/10/07 23:07:33 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
+2014/10/07 23:07:33 $VAR1 = {
+          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
+          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
+          'remoteMessages' => [
+                              {
+                                'info' => 'false',
+                                'warning' => 'false',
+                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
+                                'error' => 'true',
+                                'messageType' => 'internal.message.error'
+                              },
+                              {
+                                'info' => 'false',
+                                'warning' => 'true',
+                                'messageKey' => 'warning.upgrade.rebootrequired',
+                                'error' => 'false',
+                                'messageType' => 'internal.message.warning'
+                              }
+                            ],
+          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
+          'result' => 'internal.request.failed'
+        };
+2014/10/07 23:07:33 2014-10-07 23:07:33		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
+2014/10/07 23:07:33 2014-10-07 23:07:33	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.160
