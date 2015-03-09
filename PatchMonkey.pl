@@ -16,9 +16,10 @@ Log::Log4perl->easy_init(
 	  
 # Check for input file
 if ($ARGV[0] eq "") {die "No input file specified. $supporturl";}
+if ($ARGV[0] eq "status" && $ARGV[1] ne "") {print "Running in Status Mode\n"; $statusmode=1;$myfile=$ARGV[1];} else {print "Running in Patch Mode\n"; $statusmode=0;$myfile=$ARGV[0];}
 
 # Open input file and loop through
-open my $fh, "<", $ARGV[0] or die "$ARGV[0]: $!";
+open my $fh, "<", $myfile or die "myfile: $!";
 my $csv = Text::CSV->new ({ binary => 1, auto_diag => 1, sep_char => "\t" });
 $csv->column_names ($csv->getline ($fh));
 my $totalservers = 0;
@@ -30,9 +31,62 @@ while ( not $csv->eof ) {
 	next unless grep $_, %$row;
 	$totalservers++;
 	# check for required columns in input file.
-	if ($row->{server} eq "" || $row->{user} eq "" || $row->{password} eq "" || $row->{file} eq "" || $row->{sftpserver} eq "" || $row->{sftpuser} eq "" || $row->{sftppassword} eq "" || $row->{path} eq "") { 
+	if ($statusmode==0 && ($row->{server} eq "" || $row->{user} eq "" || $row->{password} eq "" || $row->{file} eq "" || $row->{sftpserver} eq "" || $row->{sftpuser} eq "" || $row->{sftppassword} eq "" || $row->{path} eq "")) { 
 		print &logtime . "\tRequired fields not in input file\n\n$supporturl";
 		next;
+	} elsif ($statusmode==1 && ($row->{server} eq "" || $row->{user} eq "" || $row->{password} eq "")) {
+		print &logtime . "\tRequired fields not in input file\n\n$supporturl";
+		next;
+	} elsif ($statusmode==1) {
+		# everything looks good for status - lets run it!
+		$status = &logtime . "\tQuerying Server $row->{server}\n";
+		print $status;
+		DEBUG($status);
+#### Active Options Info ####
+		$returninfo=&getOptions($row->{server},$row->{user},$row->{password},"Active");
+		# Lets parse out our return
+		$message = $returninfo->{result};
+		$options = $returninfo->{options};
+		$status = &logtime . "\t$row->{server}\tActive Options Query: " . &responsedictionary($message) . "\n";
+		foreach (@$options) {
+			$option = $_->{displayName};
+			if ($option eq "") {$option="None";}
+			$status=$status . &logtime . "\t$row->{server}\tActive Options: $option\n";
+		}
+		print $status;
+		DEBUG($status);
+#### Inactive Options Info ####
+		$returninfo=&getOptions($row->{server},$row->{user},$row->{password},"Inactive");
+		# Lets parse out our return
+		$message = $returninfo->{result};
+		$options = $returninfo->{options};
+		$status = &logtime . "\t$row->{server}\tInactive Options Query: " . &responsedictionary($message) . "\n";
+		foreach (@$options) {
+			$option = $_->{displayName};
+			if ($option eq "") {$option="None";}
+			$status=$status . &logtime . "\t$row->{server}\tInactive Options: $option\n";
+		}
+		print $status;
+		DEBUG($status);
+#### Version info ####
+		$returninfo=&getVersion($row->{server},$row->{user},$row->{password},"Active");
+		# Lets parse out our return
+		$message = $returninfo->{result};
+		$version = $returninfo->{version};
+		$status = &logtime . "\t$row->{server}\tActive Version Query: " . &responsedictionary($message) . "\n";
+		$status=$status . &logtime . "\t$row->{server}\tActive Version: $version\n";
+		print $status;
+		DEBUG($status);
+		$returninfo=&getVersion($row->{server},$row->{user},$row->{password},"Inactive");
+		# Lets parse out our return
+		$message = $returninfo->{result};
+		$version = $returninfo->{version};
+		$versioncheck = scalar %version;
+		if ($versioncheck == 0) {$version = "None";}
+		$status = &logtime . "\t$row->{server}\tInactive Version Query: " . &responsedictionary($message) . "\n";
+		$status=$status . &logtime . "\t$row->{server}\tInactive Version: $version\n";
+		print $status;
+		DEBUG($status);
 	} else {
 		# everything looks good - lets try to apply the patch
 		$stage = &logtime . "\tStaging patch $row->{method} $row->{path} $row->{file} for $row->{server}\n";
@@ -119,11 +173,12 @@ while ( not $csv->eof ) {
 	}
 }
 close $fh;
-$stage = "\n" . &logtime . "\tFinal Results:\n\t\t\tTotal Servers:$totalservers\n\t\t\tStage Successful:$stagesuccess\n\t\t\tApply Successful:$applysuccess\n";
-print $stage;
-DEBUG($stage);
+if ($statusmode==0) {$status = "\n" . &logtime . "\tFinal Results:\n\t\t\tTotal Servers:$totalservers\n\t\t\tStage Successful:$stagesuccess\n\t\t\tApply Successful:$applysuccess\n";}
+if ($statusmode==1) {$status = &logtime . "\tRun Complete\n";}
+print $status;
+DEBUG($status);
 
-if (!($totalservers eq $applysuccessful)) {
+if (!($totalservers eq $applysuccess) && $statusmode==0) {
 	print "\t\t\tNot all servers completed successfully.\n";
 	exit 1;
 } else {
@@ -223,6 +278,85 @@ sub applypatch {
 	return $return;
 }
 
+sub getOptions {
+	my ($server,$user,$password,$active) = @_;
+	$authstring ="$user:$password";
+	$encodedauth = encode_base64($authstring);
+
+	$xml='<?xml version="1.0" encoding="UTF-8"?>
+	<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<SOAP-ENV:Header xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+			<wsa:Action>urn:get' . $active . 'Options</wsa:Action>
+			<wsa:MessageID>uuid:88042ed4-0c17-4aba-acfe-f6c68c1c6f0c</wsa:MessageID>
+		  <wsa:ReplyTo>
+			 <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+		  </wsa:ReplyTo>
+			<wsa:To>https://server/platform-services/services/OptionsService.OptionsServiceHttpsSoap11Endpoint</wsa:To>
+		</SOAP-ENV:Header>
+		<SOAP-ENV:Body>
+			<get' . $active . 'Options xmlns="http://services.api.platform.vos.cisco.com"/>
+		</SOAP-ENV:Body>
+	</SOAP-ENV:Envelope>';
+
+	$url = "https://$server:8443/platform-services/services/OptionsService/";
+	$cmua = new LWP::UserAgent;
+	$request = new HTTP::Request('POST', $url );
+
+	$request->header( Authorization => "Basic $encodedauth",'Content-Type' => 'text/xml; charset=utf-8' );
+	$request->content( $xml );
+	$response = $cmua->request($request);
+	$$response_text = $response->content;
+
+	$cleanedxml = &cleanxml($$response_text);
+	DEBUG($cleanedxml);
+	$xml = new XML::Simple;
+	$data = $xml->XMLin($cleanedxml,ForceArray => [ 'options' ]);
+	$getOptionsResponse = "get" . $active . "OptionsResponse";
+	$return = $data->{$getOptionsResponse}->{return};
+	return $return;
+}
+
+sub getVersion {
+	my ($server,$user,$password,$active) = @_;
+	$authstring ="$user:$password";
+	$encodedauth = encode_base64($authstring);
+
+	$xml='<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <wsa:Action xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">urn:get' . $active . 'Version</wsa:Action>
+        <wsa:MessageID xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">uuid:7481e8cf-ba47-49dc-9566-b52596fd4444</wsa:MessageID>
+        <wsa:ReplyTo xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">
+            <wsa:Address>http://www.w3.org/2005/08/addressing/anonymous</wsa:Address>
+        </wsa:ReplyTo>
+        <wsa:To xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing">https://' .  $server . '/platform-services/services/VersionService.VersionServiceHttpSoap11Endpoint</wsa:To>
+    </soapenv:Header>
+    <soapenv:Body>
+        <get' . $active . 'Version xmlns="http://services.api.platform.vos.cisco.com"/>
+    </soapenv:Body>
+</soapenv:Envelope>';
+	
+#####'
+
+	$url = "https://$server:8443/platform-services/services/VersionService/";
+	$cmua = new LWP::UserAgent;
+	$request = new HTTP::Request('POST', $url );
+
+	$request->header( Authorization => "Basic $encodedauth",'Content-Type' => 'text/xml; charset=utf-8' );
+
+	$request->content( $xml );
+	$response = $cmua->request($request);
+	$$response_text = $response->content;
+
+	$cleanedxml = &cleanxml($$response_text);
+	DEBUG($cleanedxml);
+	$xml = new XML::Simple;
+	$data = $xml->XMLin($cleanedxml);
+	$getVersionResponse = "get" . $active . "VersionResponse";
+	$return = $data->{$getVersionResponse}->{return};
+	return $return;
+}
+
 sub responsedictionary {
 	my ($response) = @_;
 	my $nodots = $response;
@@ -318,6 +452,7 @@ $responselookup{warningupgradenoupgrades}="The given directory was located and s
 $responselookup{warningupgraderebootrequired}="A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.";
 $responselookup{warningupgraderemovemedia}="Please remove the DVD from the drive.";
 $responselookup{warningupgradestatenotpersisted}="The upgrade state could not be saved. Other administrative sessions will not be able to assume control of this upgrade.";
+$responselookup{internalrequestcomplete}="The query response was successful.";
 	if ($responselookup{$nodots} eq "") {
 		return $response;
 	} else { 

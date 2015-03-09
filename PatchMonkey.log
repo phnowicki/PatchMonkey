@@ -1,630 +1,332 @@
-2014/10/07 22:47:57 2014-10-07 22:47:57	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.150
-2014/10/07 22:48:10 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:48:10 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'rebootRequired' => 'false',
-                           'version' => '0.0.0.0-0',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
-                           'path' => '/common/download/',
-                           'validated' => 'true',
-                           'signed' => 'true',
-                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
-                           'upgradeLocation' => {},
-                           'unrestrictedVersion' => 'false',
-                           'user' => {},
-                           'upgradeType' => 'upgradefile.type.cop',
-                           'essuTimestamp' => {},
-                           'server' => {},
-                           'rejectCode' => {}
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 22:48:10 2014-10-07 22:48:10		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:48:18 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:48:18 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:48:18 2014-10-07 22:48:18		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:48:18 2014-10-07 22:48:18	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.151
-2014/10/07 22:48:32 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:48:32 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'result' => 'internal.request.complete.message',
-          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
-        };
-2014/10/07 22:48:32 2014-10-07 22:48:32		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:48:40 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:48:40 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:48:40 2014-10-07 22:48:40		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:48:40 2014-10-07 22:48:40	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.152
-2014/10/07 22:48:50 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:48:50 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 22:48:50 2014-10-07 22:48:50		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:48:57 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:48:57 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:48:57 2014-10-07 22:48:57		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:48:57 2014-10-07 22:48:57	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.160
-2014/10/07 22:49:08 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:49:08 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'rebootRequired' => 'false',
-                           'version' => '0.0.0.0-0',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
-                           'path' => '/common/download/',
-                           'validated' => 'true',
-                           'signed' => 'true',
-                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
-                           'upgradeLocation' => {},
-                           'unrestrictedVersion' => 'false',
-                           'user' => {},
-                           'upgradeType' => 'upgradefile.type.cop',
-                           'essuTimestamp' => {},
-                           'server' => {},
-                           'rejectCode' => {}
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 22:49:08 2014-10-07 22:49:08		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:49:17 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:49:17 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:49:17 2014-10-07 22:49:17		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:49:17 2014-10-07 22:49:17	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.161
-2014/10/07 22:49:32 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:49:32 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'result' => 'internal.request.complete.message',
-          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
-        };
-2014/10/07 22:49:32 2014-10-07 22:49:32		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:49:41 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:49:41 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:49:41 2014-10-07 22:49:41		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:49:41 2014-10-07 22:49:41	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.162
-2014/10/07 22:49:52 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:49:52 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 22:49:52 2014-10-07 22:49:52		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:49:59 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:49:59 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:49:59 2014-10-07 22:49:59		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:49:59 2014-10-07 22:49:59	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.170
-2014/10/07 22:50:08 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:50:08 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'rebootRequired' => 'false',
-                           'version' => '0.0.0.0-0',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
-                           'path' => '/common/download/',
-                           'validated' => 'true',
-                           'signed' => 'true',
-                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
-                           'upgradeLocation' => {},
-                           'unrestrictedVersion' => 'false',
-                           'user' => {},
-                           'upgradeType' => 'upgradefile.type.cop',
-                           'essuTimestamp' => {},
-                           'server' => {},
-                           'rejectCode' => {}
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 22:50:08 2014-10-07 22:50:08		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:50:18 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:50:18 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:50:18 2014-10-07 22:50:18		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:50:18 2014-10-07 22:50:18	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.171
-2014/10/07 22:50:28 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:50:28 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'result' => 'internal.request.complete.message',
-          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
-        };
-2014/10/07 22:50:28 2014-10-07 22:50:28		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:50:36 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:50:36 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:50:36 2014-10-07 22:50:36		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:50:36 2014-10-07 22:50:36	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.172
-2014/10/07 22:50:56 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 22:50:56 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 22:50:56 2014-10-07 22:50:56		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 22:51:02 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 22:51:02 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 22:51:02 2014-10-07 22:51:02		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 22:51:02 
-2014-10-07 22:51:02	Final Results:
-			Total Servers:9
-			Stage Successful:9
-			Apply Successful:0
-2014/10/07 23:06:37 2014-10-07 23:06:37	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.150
-2014/10/07 23:06:48 <Body><prepareRemoteUpgradeResponse><return xmlns:ax241="http://element.api.platform.vos.cisco.com/xsd" xmlns:ax244="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ax243="http://element.services.api.platform.vos.cisco.com/xsd"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><checksum>e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3</checksum><essuTimestamp></essuTimestamp><name>ciscocm.bashupgrade.cop.sgn</name><path>/common/download/</path><postValidatedFilename>ciscocm.bashupgrade.cop</postValidatedFilename><rebootRequired>false</rebootRequired><rejectCode></rejectCode><server></server><signed>true</signed><unrestrictedVersion>false</unrestrictedVersion><upgradeLocation></upgradeLocation><upgradeType>upgradefile.type.cop</upgradeType><user></user><validated>true</validated><version>0.0.0.0-0</version></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 23:06:48 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax241' => 'http://element.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax244' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'rebootRequired' => 'false',
-                           'version' => '0.0.0.0-0',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'postValidatedFilename' => 'ciscocm.bashupgrade.cop',
-                           'path' => '/common/download/',
-                           'validated' => 'true',
-                           'signed' => 'true',
-                           'checksum' => 'e3:19:f4:b4:f1:10:0a:d0:91:f5:11:6c:b5:f3:7b:b3',
-                           'upgradeLocation' => {},
-                           'unrestrictedVersion' => 'false',
-                           'user' => {},
-                           'upgradeType' => 'upgradefile.type.cop',
-                           'essuTimestamp' => {},
-                           'server' => {},
-                           'rejectCode' => {}
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax243' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 23:06:48 2014-10-07 23:06:48		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 23:06:57 <Body><startUpgradeResponse><return xmlns:ax248="http://api.platform.vos.cisco.com/xsd" xmlns:ax247="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 23:06:57 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'xmlns:ax248' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 23:06:57 2014-10-07 23:06:57		Result: Problem with applying patch - ERROR: Install script of option /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 23:06:57 2014-10-07 23:06:57	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.151
-2014/10/07 23:07:09 <Body><prepareRemoteUpgradeResponse><return xmlns:ax245="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax247="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 23:07:09 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax247' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'result' => 'internal.request.complete.message',
-          'xmlns:ax245' => 'http://element.services.api.platform.vos.cisco.com/xsd'
-        };
-2014/10/07 23:07:09 2014-10-07 23:07:09		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 23:07:17 <Body><startUpgradeResponse><return xmlns:ax250="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 23:07:17 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax250' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 23:07:17 2014-10-07 23:07:17		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 23:07:17 2014-10-07 23:07:17	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.152
-2014/10/07 23:07:26 <Body><prepareRemoteUpgradeResponse><return xmlns:ax251="http://api.platform.vos.cisco.com/xsd" xmlns:ax249="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.complete.message</result><upgradeFile><name>ciscocm.bashupgrade.cop.sgn</name><password>sftpuser</password><path>\</path><server>192.168.1.20</server><upgradeLocation>upgradefile.location.remote.ftp</upgradeLocation><upgradeType>patch</upgradeType><user>sftpuser</user></upgradeFile></return></prepareRemoteUpgradeResponse></Body>
-2014/10/07 23:07:26 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax251' => 'http://api.platform.vos.cisco.com/xsd',
-          'upgradeFile' => {
-                           'password' => 'sftpuser',
-                           'upgradeLocation' => 'upgradefile.location.remote.ftp',
-                           'user' => 'sftpuser',
-                           'name' => 'ciscocm.bashupgrade.cop.sgn',
-                           'upgradeType' => 'patch',
-                           'server' => '192.168.1.20',
-                           'path' => '\\'
-                         },
-          'remoteMessages' => {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              },
-          'xmlns:ax249' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.complete.message'
-        };
-2014/10/07 23:07:26 2014-10-07 23:07:26		Result: Staging patch successful with warnings - A system reboot is required when the upgrade process completes or is canceled. This will ensure services affected by the upgrade process are functioning properly.
-2014/10/07 23:07:33 <Body><startUpgradeResponse><return xmlns:ax254="http://api.platform.vos.cisco.com/xsd" xmlns:ax253="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages><error>true</error><info>false</info><messageKey>Copstart script of /common/download//ciscocm.bashupgrade.cop failed</messageKey><messageType>internal.message.error</messageType><warning>false</warning></remoteMessages><remoteMessages><error>false</error><info>false</info><messageKey>warning.upgrade.rebootrequired</messageKey><messageType>internal.message.warning</messageType><warning>true</warning></remoteMessages><result>internal.request.failed</result></return></startUpgradeResponse></Body>
-2014/10/07 23:07:33 $VAR1 = {
-          'xmlns:xsi' => 'http://www.w3.org/2001/XMLSchema-instance',
-          'xmlns:ax254' => 'http://api.platform.vos.cisco.com/xsd',
-          'remoteMessages' => [
-                              {
-                                'info' => 'false',
-                                'warning' => 'false',
-                                'messageKey' => 'Copstart script of /common/download//ciscocm.bashupgrade.cop failed',
-                                'error' => 'true',
-                                'messageType' => 'internal.message.error'
-                              },
-                              {
-                                'info' => 'false',
-                                'warning' => 'true',
-                                'messageKey' => 'warning.upgrade.rebootrequired',
-                                'error' => 'false',
-                                'messageType' => 'internal.message.warning'
-                              }
-                            ],
-          'xmlns:ax253' => 'http://element.services.api.platform.vos.cisco.com/xsd',
-          'result' => 'internal.request.failed'
-        };
-2014/10/07 23:07:33 2014-10-07 23:07:33		Result: Problem with applying patch - Copstart script of /common/download//ciscocm.bashupgrade.cop failed
-2014/10/07 23:07:33 2014-10-07 23:07:33	Staging patch ftp \ ciscocm.bashupgrade.cop.sgn for 192.168.1.160
+2015/03/09 01:16:31 2015-03-09 01:16:31	Querying Server 192.168.1.151
+2015/03/09 01:16:34 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:16:34 2015-03-09 01:16:34	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:16:34	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:16:34	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:16:34 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:16:34 2015-03-09 01:16:34	192.168.1.151	Inactive Options Query: 
+2015/03/09 01:16:37 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:16:37 2015-03-09 01:16:37	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:16:37	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:16:38 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:16:38 2015-03-09 01:16:38	192.168.1.151	Inactive Version Query: 
+2015-03-09 01:16:38	192.168.1.151	Inactive Version: 
+2015/03/09 01:16:38 2015-03-09 01:16:38	Querying Server 192.168.1.180
+2015/03/09 01:16:38 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:16:38 2015-03-09 01:16:38	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:16:38	192.168.1.180	Active Options: 
+2015/03/09 01:16:38 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:16:38 2015-03-09 01:16:38	192.168.1.180	Inactive Options Query: 
+2015/03/09 01:16:41 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:16:41 2015-03-09 01:16:41	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:16:41	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:16:41 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:16:41 2015-03-09 01:16:41	192.168.1.180	Inactive Version Query: 
+2015-03-09 01:16:41	192.168.1.180	Inactive Version: 
+2015/03/09 01:16:41 2015-03-09 01:16:41	Run Complete
+2015/03/09 01:20:20 2015-03-09 01:20:20	Querying Server 192.168.1.151
+2015/03/09 01:20:23 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:20:23 2015-03-09 01:20:23	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:20:23	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:20:23	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:20:23 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:20:23 2015-03-09 01:20:23	192.168.1.151	Inactive Options Query: 
+2015/03/09 01:20:26 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:20:26 2015-03-09 01:20:26	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:20:26	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:20:26 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:20:26 2015-03-09 01:20:26	192.168.1.151	Inactive Version Query: 
+2015-03-09 01:20:26	192.168.1.151	Inactive Version: 
+2015/03/09 01:20:26 2015-03-09 01:20:26	Querying Server 192.168.1.180
+2015/03/09 01:20:27 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:20:27 2015-03-09 01:20:27	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:20:27	192.168.1.180	Active Options: 
+2015/03/09 01:20:27 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:20:27 2015-03-09 01:20:27	192.168.1.180	Inactive Options Query: 
+2015/03/09 01:20:30 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:20:30 2015-03-09 01:20:30	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:20:30	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:20:31 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:20:31 2015-03-09 01:20:31	192.168.1.180	Inactive Version Query: 
+2015-03-09 01:20:31	192.168.1.180	Inactive Version: 
+2015/03/09 01:20:31 2015-03-09 01:20:31	Run Complete
+2015/03/09 01:22:39 2015-03-09 01:22:39	Querying Server 192.168.1.151
+2015/03/09 01:22:41 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:22:41 2015-03-09 01:22:41	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:22:41	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:22:41	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:22:41 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:22:41 2015-03-09 01:22:41	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:22:41	192.168.1.151	Inactive Options: 
+2015/03/09 01:22:44 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:22:44 2015-03-09 01:22:44	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:22:44	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:22:44 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:22:44 2015-03-09 01:22:44	192.168.1.151	Inactive Version Query: 
+2015-03-09 01:22:44	192.168.1.151	Inactive Version: 
+2015/03/09 01:22:44 2015-03-09 01:22:44	Querying Server 192.168.1.180
+2015/03/09 01:22:45 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:22:45 2015-03-09 01:22:45	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:22:45	192.168.1.180	Active Options: 
+2015/03/09 01:22:45 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:22:45 2015-03-09 01:22:45	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:22:45	192.168.1.180	Inactive Options: 
+2015/03/09 01:22:48 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:22:48 2015-03-09 01:22:48	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:22:48	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:22:48 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:22:48 2015-03-09 01:22:48	192.168.1.180	Inactive Version Query: 
+2015-03-09 01:22:48	192.168.1.180	Inactive Version: 
+2015/03/09 01:22:48 2015-03-09 01:22:48	Run Complete
+2015/03/09 01:23:18 2015-03-09 01:23:18	Querying Server 192.168.1.151
+2015/03/09 01:23:21 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:23:21 2015-03-09 01:23:21	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:23:21	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:23:21	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:23:21 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:23:21 2015-03-09 01:23:21	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:23:21	192.168.1.151	Inactive Options: 
+2015/03/09 01:23:23 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:23:23 2015-03-09 01:23:23	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:23:23	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:23:24 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:23:24 2015-03-09 01:23:24	192.168.1.151	Inactive Version Query: 
+2015-03-09 01:23:24	192.168.1.151	Inactive Version: 
+2015/03/09 01:23:24 2015-03-09 01:23:24	Querying Server 192.168.1.180
+2015/03/09 01:23:24 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:23:24 2015-03-09 01:23:24	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:23:24	192.168.1.180	Active Options: 
+2015/03/09 01:23:24 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:23:24 2015-03-09 01:23:24	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:23:24	192.168.1.180	Inactive Options: 
+2015/03/09 01:23:27 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:23:27 2015-03-09 01:23:27	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:23:27	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:23:27 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:23:27 2015-03-09 01:23:27	192.168.1.180	Inactive Version Query: 
+2015-03-09 01:23:27	192.168.1.180	Inactive Version: 
+2015/03/09 01:23:27 2015-03-09 01:23:27	Run Complete
+2015/03/09 01:24:48 2015-03-09 01:24:48	Querying Server 192.168.1.151
+2015/03/09 01:24:50 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:24:50 2015-03-09 01:24:50	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:24:50	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:24:50	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:24:50 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:24:50 2015-03-09 01:24:50	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:24:50	192.168.1.151	Inactive Options: 
+2015/03/09 01:24:53 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:24:53 2015-03-09 01:24:53	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:24:53	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:24:54 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:24:54 2015-03-09 01:24:54	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:24:54	192.168.1.151	Inactive Version: HASH(0x4186498)
+2015/03/09 01:24:54 2015-03-09 01:24:54	Querying Server 192.168.1.180
+2015/03/09 01:24:54 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:24:54 2015-03-09 01:24:54	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:24:54	192.168.1.180	Active Options: 
+2015/03/09 01:24:54 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:24:54 2015-03-09 01:24:54	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:24:54	192.168.1.180	Inactive Options: 
+2015/03/09 01:24:57 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:24:57 2015-03-09 01:24:57	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:24:57	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:24:57 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:24:57 2015-03-09 01:24:57	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:24:57	192.168.1.180	Inactive Version: HASH(0x41870f8)
+2015/03/09 01:24:57 2015-03-09 01:24:57	Run Complete
+2015/03/09 01:25:50 2015-03-09 01:25:50	Querying Server 192.168.1.151
+2015/03/09 01:25:52 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:25:52 2015-03-09 01:25:52	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:25:52	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:25:52	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:25:52 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:25:52 2015-03-09 01:25:52	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:25:52	192.168.1.151	Inactive Options: 
+2015/03/09 01:25:55 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:25:55 2015-03-09 01:25:55	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:25:55	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:25:56 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:25:56 2015-03-09 01:25:56	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:25:56	192.168.1.151	Inactive Version: HASH(0x3314970)
+2015/03/09 01:25:56 2015-03-09 01:25:56	Querying Server 192.168.1.180
+2015/03/09 01:25:56 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:25:56 2015-03-09 01:25:56	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:25:56	192.168.1.180	Active Options: 
+2015/03/09 01:25:56 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:25:56 2015-03-09 01:25:56	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:25:56	192.168.1.180	Inactive Options: 
+2015/03/09 01:25:59 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:25:59 2015-03-09 01:25:59	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:25:59	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:26:00 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:26:00 2015-03-09 01:26:00	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:26:00	192.168.1.180	Inactive Version: HASH(0x4060a78)
+2015/03/09 01:26:00 2015-03-09 01:26:00	Run Complete
+2015/03/09 01:29:50 2015-03-09 01:29:50	Querying Server 192.168.1.151
+2015/03/09 01:29:53 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:29:53 2015-03-09 01:29:53	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:29:53	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:29:53	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:29:53 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:29:53 2015-03-09 01:29:53	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:29:53	192.168.1.151	Inactive Options: 
+2015/03/09 01:29:56 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:29:56 2015-03-09 01:29:56	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:29:56	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:29:56 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:29:56 2015-03-09 01:29:56	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:29:56	192.168.1.151	Inactive Version: HASH(0x3290238)
+2015/03/09 01:29:56 2015-03-09 01:29:56	Querying Server 192.168.1.180
+2015/03/09 01:29:56 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:29:56 2015-03-09 01:29:56	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:29:56	192.168.1.180	Active Options: 
+2015/03/09 01:29:56 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:29:56 2015-03-09 01:29:56	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:29:56	192.168.1.180	Inactive Options: 
+2015/03/09 01:30:00 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:30:00 2015-03-09 01:30:00	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:30:00	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:30:00 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:30:00 2015-03-09 01:30:00	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:30:00	192.168.1.180	Inactive Version: HASH(0x3290f30)
+2015/03/09 01:30:00 2015-03-09 01:30:00	Run Complete
+2015/03/09 01:30:11 2015-03-09 01:30:11	Querying Server 192.168.1.151
+2015/03/09 01:30:14 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:30:14 2015-03-09 01:30:14	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:30:14	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:30:14	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:30:14 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:30:14 2015-03-09 01:30:14	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:30:14	192.168.1.151	Inactive Options: 
+2015/03/09 01:30:17 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:30:17 2015-03-09 01:30:17	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:30:17	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:30:17 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:30:17 2015-03-09 01:30:17	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:30:17	192.168.1.151	Inactive Version: HASH(0x3f40760)
+2015/03/09 01:30:17 2015-03-09 01:30:17	Querying Server 192.168.1.180
+2015/03/09 01:30:17 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:30:17 2015-03-09 01:30:17	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:30:17	192.168.1.180	Active Options: 
+2015/03/09 01:30:17 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:30:17 2015-03-09 01:30:17	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:30:17	192.168.1.180	Inactive Options: 
+2015/03/09 01:30:21 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:30:21 2015-03-09 01:30:21	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:30:21	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:30:21 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:30:21 2015-03-09 01:30:21	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:30:21	192.168.1.180	Inactive Version: HASH(0x3f3d610)
+2015/03/09 01:30:21 2015-03-09 01:30:21	Run Complete
+2015/03/09 01:31:18 2015-03-09 01:31:18	Querying Server 192.168.1.151
+2015/03/09 01:31:21 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:31:21 2015-03-09 01:31:21	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:31:21	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:31:21	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:31:21 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:31:21 2015-03-09 01:31:21	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:31:21	192.168.1.151	Inactive Options: 
+2015/03/09 01:31:24 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:31:24 2015-03-09 01:31:24	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:31:24	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:31:24 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:31:24 2015-03-09 01:31:24	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:31:24	192.168.1.151	Inactive Version: HASH(0x42081d0)
+2015/03/09 01:31:24 2015-03-09 01:31:24	Querying Server 192.168.1.180
+2015/03/09 01:31:24 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:31:24 2015-03-09 01:31:24	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:31:24	192.168.1.180	Active Options: 
+2015/03/09 01:31:24 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:31:24 2015-03-09 01:31:24	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:31:24	192.168.1.180	Inactive Options: 
+2015/03/09 01:31:29 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:31:29 2015-03-09 01:31:29	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:31:29	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:31:29 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:31:29 2015-03-09 01:31:29	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:31:29	192.168.1.180	Inactive Version: HASH(0x4208650)
+2015/03/09 01:31:29 2015-03-09 01:31:29	Run Complete
+2015/03/09 01:31:39 2015-03-09 01:31:39	Querying Server 192.168.1.151
+2015/03/09 01:31:42 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:31:42 2015-03-09 01:31:42	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:31:42	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:31:42	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:31:42 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:31:42 2015-03-09 01:31:42	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:31:42	192.168.1.151	Inactive Options: 
+2015/03/09 01:31:44 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:31:44 2015-03-09 01:31:44	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:31:44	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:31:45 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:31:45 2015-03-09 01:31:45	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:31:45	192.168.1.151	Inactive Version: HASH(0x407b608)
+2015/03/09 01:31:45 2015-03-09 01:31:45	Querying Server 192.168.1.180
+2015/03/09 01:31:45 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:31:45 2015-03-09 01:31:45	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:31:45	192.168.1.180	Active Options: 
+2015/03/09 01:31:46 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:31:46 2015-03-09 01:31:46	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:31:46	192.168.1.180	Inactive Options: 
+2015/03/09 01:31:49 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:31:49 2015-03-09 01:31:49	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:31:49	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:31:50 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:31:50 2015-03-09 01:31:50	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:31:50	192.168.1.180	Inactive Version: HASH(0x2f76da8)
+2015/03/09 01:31:50 2015-03-09 01:31:50	Run Complete
+2015/03/09 01:32:30 2015-03-09 01:32:30	Querying Server 192.168.1.151
+2015/03/09 01:32:33 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:32:33 2015-03-09 01:32:33	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:32:33	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:32:33	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:32:33 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:32:33 2015-03-09 01:32:33	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:32:33	192.168.1.151	Inactive Options: 
+2015/03/09 01:32:36 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:32:36 2015-03-09 01:32:36	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:32:36	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:32:36 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:32:36 2015-03-09 01:32:36	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:32:36	192.168.1.151	Inactive Version: None
+2015/03/09 01:32:36 2015-03-09 01:32:36	Querying Server 192.168.1.180
+2015/03/09 01:32:36 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:32:36 2015-03-09 01:32:36	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:32:36	192.168.1.180	Active Options: 
+2015/03/09 01:32:36 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:32:36 2015-03-09 01:32:36	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:32:36	192.168.1.180	Inactive Options: 
+2015/03/09 01:32:40 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:32:40 2015-03-09 01:32:40	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:32:40	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:32:40 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:32:40 2015-03-09 01:32:40	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:32:40	192.168.1.180	Inactive Version: None
+2015/03/09 01:32:40 2015-03-09 01:32:40	Run Complete
+2015/03/09 01:36:04 2015-03-09 01:36:04	Querying Server 192.168.1.151
+2015/03/09 01:36:07 <Body><getActiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options><displayName>cmterm-devicepack9.1.2.13076-1.cop</displayName><name></name><version></version></options><options><displayName>ciscocm.bashupgrade.cop</displayName><name></name><version></version></options></return></getActiveOptionsResponse></Body>
+2015/03/09 01:36:07 2015-03-09 01:36:07	192.168.1.151	Active Options Query: The query response was successful.
+2015-03-09 01:36:07	192.168.1.151	Active Options: cmterm-devicepack9.1.2.13076-1.cop
+2015-03-09 01:36:07	192.168.1.151	Active Options: ciscocm.bashupgrade.cop
+2015/03/09 01:36:07 <Body><getInactiveOptionsResponse><return xmlns:ax25="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax26="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:36:07 2015-03-09 01:36:07	192.168.1.151	Inactive Options Query: The query response was successful.
+2015-03-09 01:36:07	192.168.1.151	Inactive Options: None
+2015/03/09 01:36:10 <Body><getActiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>9.1.2.11900-12</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:36:10 2015-03-09 01:36:10	192.168.1.151	Active Version Query: The query response was successful.
+2015-03-09 01:36:10	192.168.1.151	Active Version: 9.1.2.11900-12
+2015/03/09 01:36:10 <Body><getInactiveVersionResponse><return xmlns:ax217="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax218="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:36:10 2015-03-09 01:36:10	192.168.1.151	Inactive Version Query: The query response was successful.
+2015-03-09 01:36:10	192.168.1.151	Inactive Version: None
+2015/03/09 01:36:10 2015-03-09 01:36:10	Querying Server 192.168.1.180
+2015/03/09 01:36:10 <Body><getActiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getActiveOptionsResponse></Body>
+2015/03/09 01:36:10 2015-03-09 01:36:10	192.168.1.180	Active Options Query: The query response was successful.
+2015-03-09 01:36:10	192.168.1.180	Active Options: None
+2015/03/09 01:36:10 <Body><getInactiveOptionsResponse><return xmlns:ax29="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax210="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><options xsi:nil="true" /></return></getInactiveOptionsResponse></Body>
+2015/03/09 01:36:10 2015-03-09 01:36:10	192.168.1.180	Inactive Options Query: The query response was successful.
+2015-03-09 01:36:10	192.168.1.180	Inactive Options: None
+2015/03/09 01:36:14 <Body><getActiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version>10.5.2.10000-5</version></return></getActiveVersionResponse></Body>
+2015/03/09 01:36:14 2015-03-09 01:36:14	192.168.1.180	Active Version Query: The query response was successful.
+2015-03-09 01:36:14	192.168.1.180	Active Version: 10.5.2.10000-5
+2015/03/09 01:36:14 <Body><getInactiveVersionResponse><return xmlns:ax221="http://element.services.api.platform.vos.cisco.com/xsd" xmlns:ax222="http://api.platform.vos.cisco.com/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><remoteMessages xsi:nil="true" /><result>internal.request.complete</result><version></version></return></getInactiveVersionResponse></Body>
+2015/03/09 01:36:14 2015-03-09 01:36:14	192.168.1.180	Inactive Version Query: The query response was successful.
+2015-03-09 01:36:14	192.168.1.180	Inactive Version: None
+2015/03/09 01:36:14 2015-03-09 01:36:14	Run Complete
